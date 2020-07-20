@@ -1,0 +1,29 @@
+.separator-theme {
+  top: 0;
+  position: absolute;
+  background-color: hsl(225, 100%, 98%);
+  width: 100%;
+  height: 200px;
+  z-index: -1;
+}
+
+.separator-theme-bottom {
+  position: absolute;
+  background-color: white;
+  z-index: -2;
+}
+
+.social-media-container {
+  width: 80%;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.dark-separator-theme {
+  background-color: hsl(228, 28%, 17%);
+}
+
+.dark-App {
+  background-color: hsl(230, 17%, 14%);
+}

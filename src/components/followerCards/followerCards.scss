@@ -1,0 +1,119 @@
+.followers-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 4%;
+
+  .follower-card {
+    width: 220px;
+    height: 180px;
+    margin-bottom: 5%;
+    border-top: 4px solid transparent;
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .facebook {
+    border-top-color: hsl(208, 92%, 53%);
+  }
+  .youtube {
+    border-top-color: hsl(348, 97%, 39%);
+  }
+  .twitter {
+    border-top-color: hsl(203, 89%, 53%);
+  }
+  .instagram {
+    border-image: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%))
+      10;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+}
+
+.follower-card:hover {
+  background-color: hsl(227, 47%, 92%);
+}
+
+.social-user-container {
+  width: 40%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+  }
+}
+
+.followers-total-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4:first-child {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  h4:nth-child(2) {
+    font-size: 1.1rem;
+    color: hsl(228, 12%, 44%);
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+}
+
+.time-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .icon {
+    width: 8px;
+    height: 4px;
+    margin-right: 5px;
+  }
+}
+
+.up {
+  h4 {
+    color: hsl(163, 72%, 41%);
+  }
+}
+
+.down {
+  h4 {
+    color: hsl(356, 69%, 56%);
+  }
+}
+
+.dark-followers-container {
+  .follower-card {
+    background-color: hsl(228, 28%, 20%);
+  }
+
+  .follower-card:hover {
+    background-color: hsl(228, 28%, 26%);
+  }
+
+  .followers-total-container {
+    h4:first-child {
+      color: white;
+    }
+  }
+}

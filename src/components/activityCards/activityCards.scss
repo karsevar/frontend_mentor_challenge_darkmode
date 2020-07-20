@@ -1,0 +1,96 @@
+.activity-cards-container {
+  width: 100%;
+  margin-top: 2%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.activity-container {
+  box-sizing: border-box;
+  width: 220px;
+  height: 100px;
+  margin-bottom: 3%;
+  display: flex;
+  border-radius: 5px;
+  background-color: hsl(227, 47%, 96%);
+  padding: 20px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  .activity-title-total {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h4:nth-child(1) {
+      color: hsl(228, 12%, 44%);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    h4:nth-child(2) {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+
+  .social-media-stats {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.activity-container:hover {
+  background-color: hsl(227, 47%, 92%);
+}
+
+.votes-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+
+  .percent-icon {
+    width: 8px;
+    height: 4px;
+    margin-right: 5px;
+  }
+
+  p {
+    font-weight: 700;
+  }
+}
+
+.up {
+  p {
+    color: hsl(163, 72%, 41%);
+  }
+}
+
+.down {
+  p {
+    color: hsl(356, 69%, 56%);
+  }
+}
+
+.dark-activity-container {
+  background-color: hsl(228, 28%, 20%);
+
+  .activity-title-total {
+    h4:nth-child(2) {
+      color: white;
+    }
+  }
+}
+
+.dark-activity-container:hover {
+  background-color: hsl(228, 28%, 26%);
+}
